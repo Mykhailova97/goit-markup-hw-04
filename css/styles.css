@@ -201,15 +201,13 @@ footer {
 }
 
 .feature-icon .icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   width: 270px;
-  padding: 25px 100px;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   margin-bottom: 30px;
-}
-
-.icons-list {
-  background-color: #757575;
 }
 
 .feature-list .title {
@@ -310,10 +308,6 @@ footer {
   align-items: center;
 }
 
-.socials-list {
-  padding: 0 32px;
-}
-
 .social-link {
   display: flex;
   justify-content: center;
@@ -324,20 +318,22 @@ footer {
   border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--button-bg-color);
 }
 
-.social-link:hover svg {
+.social-link:hover svg,
+.social-link:focus svg {
   fill: white;
 }
 
 .social-item svg {
-  fill: #757575;
+  fill: #afb1b8;
 }
 
 .social-item + .social-item {
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .companies .title {
@@ -356,23 +352,29 @@ footer {
   align-items: center;
 }
 
-.clients-list {
-  display: inline-block;
+.clients-icon .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
+  height: 92px;
   width: 170px;
+}
+
+.clients-icon svg {
   fill: #afb1b8;
-  cursor: pointer;
 }
 
-.clients-list:hover {
-  border-color: var(--button-bg-color);
-  fill: var(--button-bg-color);
+.clients-icon .icons:hover,
+.clients-icon .icons:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
 }
 
-.clients-list:hover .icons {
-  fill: var(--button-bg-color);
+.clients-icon .icons:hover svg,
+.clients-icon .icons:focus svg {
+  fill: #2196f3;
 }
 
 .clients-list + .clients-list {
@@ -513,6 +515,7 @@ footer {
   fill: #ffffff;
 }
 
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--button-bg-color);
 }
